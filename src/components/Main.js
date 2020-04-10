@@ -11,6 +11,8 @@ class Main extends Component {
     user: null
   };
 
+  timer = null;
+
   handleCardClick = (login) => {
     axios.get('https://api.github.com/users/' + login)
       .then(res => {
@@ -36,20 +38,23 @@ class Main extends Component {
   };
 
   handleSearch = (user) => {
-    axios.get('https://api.github.com/search/users?q=' + user + '&per_page=99')
-      .then(res => {
-        this.setState({
-          ...this.state,
-          users: res.data.items
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => {
+      axios.get('https://api.github.com/search/users?q=' + user + '&per_page=99')
+        .then(res => {
+          this.setState({
+            ...this.state,
+            users: res.data.items
+          });
+        })
+        .catch(err => {
+          console.log(err);
+          this.setState({
+            users: [],
+            user: null
+          });
         });
-      })
-      .catch(err => {
-        console.log(err);
-        this.setState({
-          users: [],
-          user: null
-        });
-      });
+    }, 500);
   }
 
   render() {
