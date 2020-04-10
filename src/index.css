@@ -92,3 +92,12 @@ code {
 .modal-content .row {
   margin-bottom: auto;
 }
+
+.dropdown-cont {
+  width: 20%;
+  margin-top: 15px;
+}
+
+.dropdown-cont label {
+  font-size: 15px;
+}
