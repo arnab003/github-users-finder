@@ -5,9 +5,99 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#search {
+  color: #eeeeee;
+}
+
+#blankImg {
+  visibility: hidden;
+}
+
+.search-icon {
+  padding-top: 4px;
+  padding-right: 6px;
+}
+
+.navbar-fixed .icon {
+  margin-top: 15px;
+  fill: #eeeeee;
+}
+
+.modal-title {
+  margin-bottom: 24px;
+}
+
+.modal-title .icon {
+  float: left;
+}
+
+.modal-title h4 {
+  margin-left: 6px;
+  float: left;
+}
+
+.modal-title img {
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.title {
+  font-size: 22px;
+  vertical-align: top;
+  padding-left: 12px;
+  color: #eeeeee;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    display: none;
+  }
+}
+
+.user-cont {
+  padding-top: 30px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.user-cont .card {
+  max-width: 300px;
+}
+
+.user-cont .card:hover {
+  transform: translateY(-5px);
+  transition: all .2s ease;
+}
+
+.modal-header {
+  float: right;
+}
+
+.modal-close-icon {
+  margin: 12px 12px 0 0;
+  color: black;
+}
+
+.modal-content .row {
+  margin-bottom: auto;
+}
+
+.dropdown-cont {
+  width: 20%;
+  margin-top: 15px;
+}
+
+.dropdown-cont label {
+  font-size: 15px;
 }
