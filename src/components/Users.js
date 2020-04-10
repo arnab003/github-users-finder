@@ -20,7 +20,7 @@ function Users(props) {
     })
   ) : null;
   return (
-    <div className="container users">
+    <div className="user-cont container">
       <div className="row">
         { userList }
       </div>

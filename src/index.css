@@ -5,11 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eeeeee;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#search {
+  color: white;
+}
+
+.search-icon {
+  padding-top: 4px;
+  padding-right: 6px;
+}
+
+.icon {
+  margin-top: 15px;
+  fill: white;
+}
+
+.title {
+  font-size: 22px;
+  vertical-align: top;
+  padding-left: 12px;
+  color: #eeeeee;
+}
+
+.user-cont {
+  padding-top: 30px;
 }
 
 .pointer {
