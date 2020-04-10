@@ -14,7 +14,11 @@ code {
 }
 
 #search {
-  color: white;
+  color: #eeeeee;
+}
+
+#blankImg {
+  visibility: hidden;
 }
 
 .search-icon {
@@ -22,9 +26,28 @@ code {
   padding-right: 6px;
 }
 
-.icon {
+.navbar-fixed .icon {
   margin-top: 15px;
-  fill: white;
+  fill: #eeeeee;
+}
+
+.modal-title {
+  margin-bottom: 24px;
+}
+
+.modal-title .icon {
+  float: left;
+}
+
+.modal-title h4 {
+  margin-left: 6px;
+  float: left;
+}
+
+.modal-title img {
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
 }
 
 .title {
@@ -32,6 +55,12 @@ code {
   vertical-align: top;
   padding-left: 12px;
   color: #eeeeee;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    display: none;
+  }
 }
 
 .user-cont {
@@ -42,11 +71,24 @@ code {
   cursor: pointer;
 }
 
-.card {
+.user-cont .card {
   max-width: 300px;
 }
 
-.card:hover {
+.user-cont .card:hover {
   transform: translateY(-5px);
   transition: all .2s ease;
+}
+
+.modal-header {
+  float: right;
+}
+
+.modal-close-icon {
+  margin: 12px 12px 0 0;
+  color: black;
+}
+
+.modal-content .row {
+  margin-bottom: auto;
 }

@@ -54,8 +54,8 @@ class Main extends Component {
             user: null
           });
         });
-    }, 500);
-  }
+    }, 300);
+  };
 
   render() {
     return (
