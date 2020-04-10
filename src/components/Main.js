@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Modal from './Modal';
 import axios from 'axios';
 import Users from './Users';
-import Navbar from './Navbar';
+import SearchBox from './SearchBox';
 
 class Main extends Component {
 
@@ -60,7 +60,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Navbar handleSearch={this.handleSearch} />
+        <SearchBox handleSearch={this.handleSearch} />
         <Modal user={this.state.user} handleModalClose={this.handleModalClose} />
         <Users users={this.state.users} handleCardClick={this.handleCardClick} />
       </div>

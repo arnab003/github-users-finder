@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../hoc/Navbar';
 
 export function SearchBox(props) {
   return (
@@ -8,4 +9,4 @@ export function SearchBox(props) {
   );
 }
 
-export default SearchBox
+export default Navbar(SearchBox);

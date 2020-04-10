@@ -11,8 +11,8 @@ function Users(props) {
               <img src={user.avatar_url} alt=""/>
             </div>
             <div className="card-content">
-              <label className="card-title">{user.login}</label>
-              <p>Score: {user.score}</p>
+              <label className="card-title black-text">{user.login}</label>
+              <p className="grey-text">Score: {user.score}</p>
             </div>
           </div>
         </div>
