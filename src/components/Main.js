@@ -72,6 +72,11 @@ class Main extends Component {
     });
   };
 
+  scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   render() {
     return (
       <div>
@@ -79,6 +84,9 @@ class Main extends Component {
         <Modal user={this.state.user} handleModalClose={this.handleModalClose} />
         <Sort handleSelect={this.handleSelect} users={this.state.users} />
         <Users users={this.state.users} handleCardClick={this.handleCardClick} />
+        <div className="fixed-action-btn btn-floating btn-large  grey darken-3" onClick={this.scrollToTop}>
+          <i className="large material-icons">expand_less</i>
+        </div>
       </div>
     );
   }
